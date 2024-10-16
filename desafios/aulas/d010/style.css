@@ -8,6 +8,12 @@
     font-weight: normal;
 }
 
+@media screen and (max-width: 430px){
+    nav{
+        font-size: 0.78em;
+    }
+}
+
 :root{
     --cor0: #ebe5c5;
     --cor1: #83e1ad;
