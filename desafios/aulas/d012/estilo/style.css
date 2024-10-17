@@ -52,30 +52,30 @@ section{
     line-height: 2em;
 }
 
-.normal p{
+section.normal > p{
     padding-bottom: 2em;
 }
 
 .foto{
     background-attachment: fixed;
     background-size: cover;
-    background-position: 50% 50%;
-    box-shadow: 10px 10px 10px inset rgba(0, 0, 0, 0.336);
+    box-shadow: 6px 6px 13px inset rgba(0, 0, 0, 0.418);
 }
 
 .foto p{
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.514);
     color: white;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 0px black;
 }
 
 .foto#flor{
-    background-image: url(.imagens/background001.jpg);
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
 }
 
 .foto#carta{
-    background-image: url(.imagens/background002.jpg);
+    background-image: url(../imagens/background002.jpg);
 }
 
 footer{
