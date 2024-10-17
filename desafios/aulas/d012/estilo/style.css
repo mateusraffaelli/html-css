@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 :root{
-    --fonte-padrao: Verdana, Arial, Helvetica, sans-serif;
-    --fonte-titulo: 'Passion One', cursive;
-    --fonte-cordel: 'Sriracha', cursive;
+    --fonte1: Verdana, Arial, Helvetica, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
 }
 
 *{
@@ -20,36 +20,36 @@ header{
     padding: 50px;
 }
 
-h1{
+header > h1{
     font-weight: bold;
-    font-family: var(--fonte-titulo);
+    font-family: var(--fonte2);
     font-size: 10vw;
+    font-variant: small-caps;
 }
 
-p{
-    font-family: var(--fonte-padrao);
+header > p{
+    font-family: var(--fonte1);
 }
 
 a{
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    font-family: var(--fonte-padrao);
+    font-weight: bolder;
+    font-family: var(--fonte1);
 }
 
 a:hover{
     text-decoration: underline;
 }
 
-main p{
-    font-family: var(--fonte-cordel);
-    font-size: 35px;
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
     text-wrap: 10em;
     line-height: 2em;
-}
-
-div{
-    padding: 87px 0px 87px 30px;
 }
 
 .normal p{
@@ -64,19 +64,18 @@ div{
 }
 
 .foto p{
-    display: block;
-    background-color: rgba(0, 0, 0, 0.356);
-    max-width: 420px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.253);
     color: white;
     text-shadow: 1px 1px 1px black;
 }
 
 .foto#flor{
-    background-image: url(imagens/background001.jpg);
+    background-image: url(.imagens/background001.jpg);
 }
 
 .foto#carta{
-    background-image: url(imagens/background002.jpg);
+    background-image: url(.imagens/background002.jpg);
 }
 
 footer{
@@ -85,4 +84,8 @@ footer{
     text-align: center;
     padding: 10px;
     min-width: 510px;
+}
+
+footer> p{
+    font-family: var(--fonte1);
 }
