@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <div>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor">
+        </div>
+        
+        <div>
+            <label for="inivel">Nível de Satisfação:</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2"> muda o range, varia de 5 em 5, value pre valor do range
+        </div>
+        <div>
+            <label for="ifoto">Foto do perfil:</label>
+            <input type="file" name="foto" id="ifoto"> quando usar metodo de enviar arquivos precisa usar o method post
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+        
+    </form>
+</body>
+</html>
