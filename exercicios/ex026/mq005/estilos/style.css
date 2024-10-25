@@ -41,7 +41,7 @@ menu > ul{
     list-style-type: none;
 }
 
-a{
+menu > ul > li> a{
     display: block;
     text-decoration: none;
     color: white;
@@ -53,6 +53,18 @@ a{
 
 a:hover{
     background-color: gray;
+}
+
+nav{
+    display: none;
+    padding: 10px 10px 10px 0px;
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(85, 85, 85);
+    padding: 10px;
 }
 
 main{
