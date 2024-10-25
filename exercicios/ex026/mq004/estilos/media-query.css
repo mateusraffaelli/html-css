@@ -1,3 +1,78 @@
 @charset "UTF-8";
 
 /* Todas as demais mídias */
+
+/* Ttypical Device Breakpoints
+------------------------------
+Extra Pequeno (Mobile): até 576px de largura de viewport.​
+Pequeno (Tablet em modo retrato): de 577px a 768px de largura.
+Médio (Tablet em modo paisagem): de 769px a 1024px de largura.​
+Grande (Desktop): de 1025px a 1200px de largura.
+Extra Grande (Monitores grandes): acima de 1200px de largura.​
+*/
+
+@media print{
+    body{
+        background-image: url(../imagens/back-print.jpg); /* Desnecessario - não imprime*/ 
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main::after{
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.cin';
+        text-decoration: overline;
+    }
+
+    img#phone{ display: none; }
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+
+/* Não precisa colocar config para dispositivos moveis por causa do outro estilo 1- tablet, 2- desktop, - telas grandes*/
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    
+    img#phone{ display: none; }
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width:1025px) and (max-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    
+    img#phone{ display: none; }
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    
+    main{
+        width: 700px;
+    }
+
+    img#phone{ display: none; }
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+
+}
