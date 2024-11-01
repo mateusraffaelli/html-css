@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Flexbox</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <i id="burger" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
+            <a href="#">Opção 6</a>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Teste de Flexbox</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea ullam, nostrum perspiciatis sunt velit fuga necessitatibus, tempore voluptatem minus cum dolore voluptatum? Dolores iure alias accusantium cumque! Dolor, deleniti officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum accusantium aliquid, illum accusamus aperiam molestias temporibus, explicabo sint iusto ducimus repellat est provident excepturi dolorem ipsum unde architecto nihil vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet non veniam, quos explicabo exercitationem tenetur a sit esse culpa ullam architecto inventore incidunt alias fugit. Voluptas inventore quod neque quo!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis itaque illo quo numquam magni obcaecati repellendus animi aut nihil modi, minus voluptates omnis distinctio, similique repudiandae? Corporis iusto voluptas ducimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, dignissimos sit? Dignissimos, accusamus voluptas. Tenetur et omnis impedit hic inventore fugit, eum ab culpa! Sint quisquam quis enim harum numquam?</p>
+        </article>
+    </main>
+    
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+    header > menu{
+        flex-flow: row nowrap; 
+        justify-content: flex-start;
+    }
+
+    header> h1{
+        text-align: left;
+    }
+
+    menu > a{
+        flex: 0 0 100px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    header > menu{
+        flex-flow: row nowrap; 
+        justify-content: flex-end;
+    }
+
+}
